@@ -1,0 +1,12 @@
+<!-- Copyright 2019 Amazon.com, Inc. or its affiliates. All Rights Reserved. -->
+<!-- SPDX-License-Identifier: Apache-2.0 -->
+
+<idea-plugin xmlns:xi="http://www.w3.org/2001/XInclude">
+    <id>aws.toolkit.gui-tests</id>
+    <name>AWS Toolkit GUI Tests</name>
+    <vendor email="aws-toolkit-jetbrains@amazon.com" url="https://aws.amazon.com/">Amazon Web Services</vendor>
+    <version>1.0</version>
+
+    <depends>com.intellij.testGuiFramework</depends>
+    <depends>aws.toolkit</depends>
+</idea-plugin>

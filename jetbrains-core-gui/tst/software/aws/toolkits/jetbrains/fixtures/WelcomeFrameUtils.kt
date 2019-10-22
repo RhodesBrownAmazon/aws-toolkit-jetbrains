@@ -3,13 +3,13 @@
 
 package software.aws.toolkits.jetbrains.fixtures
 
-import com.intellij.openapi.util.SystemInfo
-import com.intellij.testGuiFramework.fixtures.WelcomeFrameFixture
-import com.intellij.testGuiFramework.impl.actionLink
-import com.intellij.testGuiFramework.impl.popupMenu
+import com.intellij.testGuiFramework.framework.GuiTestUtil.shortcut
+import com.intellij.testGuiFramework.util.Key
+import com.intellij.testGuiFramework.util.Key.S
+import com.intellij.testGuiFramework.util.Modifier
+import com.intellij.testGuiFramework.util.Modifier.ALT
+import com.intellij.testGuiFramework.util.plus
 
-fun WelcomeFrameFixture.openSettingsDialog() {
-    actionLink("Configure").click()
-    val prefName = if (SystemInfo.isMac) "Preferences" else "Settings"
-    popupMenu(prefName).clickSearchedItem()
+fun openSettingsDialog() {
+    shortcut(Modifier.CONTROL + ALT + S, Modifier.META + Key.COMMA)
 }
